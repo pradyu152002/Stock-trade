@@ -146,13 +146,14 @@
               <label> <input type="radio" value="8" name="stocks"  id="stock2" onclick="im('a2')" class="yo">Stock 8 </label><br>
               <label> <input type="radio" value="9" name="stocks"  id="stock2" onclick="im('a2')" class="yo">Stock 9 </label><br>
               <label> <input type="radio" value="10" name="stocks" id="stock2" onclick="im('a2')"  class="yo">Stock10 </label><br>
-              <button type="submit" id="confirm" class="btn btn-block btn-outline-dark btn-lg" > Confirm</button>
+              <button type="submit" id="confirm" class="btn btn-block btn-outline-dark btn-lg" onclick="picture()" > Confirm</button>
             </form>
           </div>
         </div>
       </div>
 
       <div class="col-lg-3 col-md-6 ss">
+        <img id="bigpic" alt="The performance graph of the stock" src="bigpic" style="width:326.4px;height:492.2px">
       </div>
 
       <div class="col-lg-4 col-md-6 ss">
@@ -239,6 +240,12 @@
       }
       // alert("Are you sure you want to sell?");
     }
+
+    function picture(){
+        var pic = "images/download.jpg"
+        document.getElementById('bigpic').src = pic;
+
+        }
 
 
   </script>
