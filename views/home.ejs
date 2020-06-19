@@ -34,11 +34,6 @@
       margin: 0.3px 25px;
     }
 
-    .k {
-      margin: 0px 10px;
-    }
-
-
     .mb3 {
       display: block;
     }
@@ -53,6 +48,10 @@
 
     .ss {
       margin: 10px 30px;
+    }
+
+    #stock2{
+      margin:4px 50px
     }
 
     .text {
@@ -85,52 +84,23 @@
       font-weight: bold;
       font-size: 1.3rem;
     }
-
-    .dropbtn {
+    .ccs{
+     color: white;
+      margin: 0px 0px 10px 0px;
       background-color: rgb(52, 58, 64);
-      color: white;
-      padding: 10px 80px;
-      margin: 0px 60px;
-      border-radius: 4px;
-      font-size: 16px;
-      border: none;
-      cursor: pointer;
+      text-align: center;
+      padding: 20px;
+      border-radius: 5px;
+      }
+
+
+    @media (max-width: 1200px){
+      #title{
+        text-align: center;
+      }
     }
 
-    .dropdown {
-      position: relative;
-      display: inline-block;
-      font-weight: bold;
 
-    }
-
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #f9f9f9;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-      z-index: 1;
-    }
-
-    .dropdown-content a {
-      color: black;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-    }
-
-    .dropdown-content a:hover {
-      background-color: #f1f1f1
-    }
-
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-
-    .dropdown:hover .dropbtn {
-      background-color: rgb(52, 58, 64);
-    }
   </style> -->
 </head>
 
@@ -166,20 +136,23 @@
           </div>
           <div class="card-body">
             <form action="stockSelect" method="post">
-              <label> <input type="radio" value="1" name="stocks" class="yo">Stock 1 </label><br>
-              <label> <input type="radio" value="2" name="stocks" class="yo">Stock 2 </label><br>
-              <label> <input type="radio" value="3" name="stocks" class="yo">Stock 3 </label><br>
-              <label> <input type="radio" value="4" name="stocks" class="yo">Stock 4 </label><br>
-              <label> <input type="radio" value="5" name="stocks" class="yo">Stock 5 </label><br>
-              <label> <input type="radio" value="6" name="stocks" class="yo">Stock 6 </label><br>
-              <label> <input type="radio" value="7" name="stocks" class="yo">Stock 7 </label><br>
-              <label> <input type="radio" value="8" name="stocks" class="yo">Stock 8 </label><br>
-              <label> <input type="radio" value="9" name="stocks" class="yo">Stock 9 </label><br>
-              <label> <input type="radio" value="10" name="stocks" class="yo">Stock10 </label><br>
-              <button type="submit" id="confirm" class="btn btn-block btn-outline-dark btn-lg"> Confirm</button>
+              <label> <input type="radio" value="1" name="stocks"  id="stock2" onclick="im('a2')" class="yo">Stock 1 </label><br>
+              <label> <input type="radio" value="2" name="stocks"  id="stock2" onclick="im('a2')" class="yo">Stock 2 </label><br>
+              <label> <input type="radio" value="3" name="stocks"  id="stock2" onclick="im('a2')" class="yo">Stock 3 </label><br>
+              <label> <input type="radio" value="4" name="stocks"  id="stock2" onclick="im('a2')" class="yo">Stock 4 </label><br>
+              <label> <input type="radio" value="5" name="stocks"  id="stock2" onclick="im('a2')" class="yo">Stock 5 </label><br>
+              <label> <input type="radio" value="6" name="stocks"  id="stock2" onclick="im('a2')" class="yo">Stock 6 </label><br>
+              <label> <input type="radio" value="7" name="stocks"  id="stock2" onclick="im('a2')" class="yo">Stock 7 </label><br>
+              <label> <input type="radio" value="8" name="stocks"  id="stock2" onclick="im('a2')" class="yo">Stock 8 </label><br>
+              <label> <input type="radio" value="9" name="stocks"  id="stock2" onclick="im('a2')" class="yo">Stock 9 </label><br>
+              <label> <input type="radio" value="10" name="stocks" id="stock2" onclick="im('a2')"  class="yo">Stock10 </label><br>
+              <button type="submit" id="confirm" class="btn btn-block btn-outline-dark btn-lg" > Confirm</button>
             </form>
           </div>
         </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 ss">
       </div>
 
       <div class="col-lg-4 col-md-6 ss">
@@ -198,15 +171,15 @@
           </div>
           <div class="card-body">
 
-            <div class="cool">
-              <form class="" action="buy" method="post">
+            <div >
+              <form class="" action="buy" method="post" style="margin-bottom:0px">
                 <label for="Investment" class="sr-only">Limit</label>
 
                 <input type="Investment" id="invest" name="investmentAmount" class="form-control " placeholder="Invest">
-                <button class="btn btn-dark k" id="investmentButton" onclick="investAlert()">INVEST</button>
+                <button class="btn btn-dark " id="investmentButton" style="width:30%;margin:5% 35%" onclick="investAlert()">INVEST</button>
               </form>
               <form class="" action="sell" method="post">
-                 <button type="submit" id="sellButton" class="btn btn-dark k" onclick="sellAlert()">SELL</button>
+                 <button type="submit" id="sellButton" class="btn btn-dark " style="width:30%;margin:0 35%;" onclick="sellAlert()">SELL</button>
               </form>
             </div>
             <br>
@@ -266,6 +239,8 @@
       }
       // alert("Are you sure you want to sell?");
     }
+
+
   </script>
 
 </body>
