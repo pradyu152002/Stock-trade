@@ -1,0 +1,273 @@
+<html>
+
+<head>
+  <title>Stock Exchange</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+  <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- <style>
+    #middle {
+      padding: 5% 45px;
+    }
+
+    .new {
+      margin: 5px 30px;
+    }
+
+    .navbar-brand {
+      font-family: "Ubuntu";
+      font-weight: bold;
+      font-size: 2rem;
+      margin: 0.3px 25px;
+    }
+
+    .k {
+      margin: 0px 10px;
+    }
+
+
+    .mb3 {
+      display: block;
+    }
+
+    .yo {
+      margin: 5px 50px;
+    }
+
+    .cool {
+      display: flex;
+    }
+
+    .ss {
+      margin: 10px 30px;
+    }
+
+    .text {
+      color: white;
+    }
+
+    #footer {
+      padding: 7% 15%;
+      text-align: center;
+      background-color: rgb(52, 58, 64);
+    }
+
+    .alert.warning {
+      background-color: rgb(52, 58, 64);
+      color: white;
+    }
+
+    .mm {
+      margin: 20px 10px;
+      color: white;
+    }
+
+    .m {
+      color: white;
+    }
+
+    .move {
+      margin: 2px 10px;
+      font-family: "Ubuntu";
+      font-weight: bold;
+      font-size: 1.3rem;
+    }
+
+    .dropbtn {
+      background-color: rgb(52, 58, 64);
+      color: white;
+      padding: 10px 80px;
+      margin: 0px 60px;
+      border-radius: 4px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      font-weight: bold;
+
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+      background-color: rgb(52, 58, 64);
+    }
+  </style> -->
+</head>
+
+<body>
+
+  <section id="start">
+
+    <div class="one">
+
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark ">
+        <a class="navbar-brand" href="#">Stock exchange</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <section id="middle">
+
+    <div class="row">
+
+      <div class="col-lg-3 col-md-6 ss">
+        <div class="card">
+          <div class="card-header bg-dark text">
+            <h3>Stocks</h3>
+          </div>
+          <div class="card-body">
+            <form action="stockSelect" method="post">
+              <label> <input type="radio" value="1" name="stocks" class="yo">Stock 1 </label><br>
+              <label> <input type="radio" value="2" name="stocks" class="yo">Stock 2 </label><br>
+              <label> <input type="radio" value="3" name="stocks" class="yo">Stock 3 </label><br>
+              <label> <input type="radio" value="4" name="stocks" class="yo">Stock 4 </label><br>
+              <label> <input type="radio" value="5" name="stocks" class="yo">Stock 5 </label><br>
+              <label> <input type="radio" value="6" name="stocks" class="yo">Stock 6 </label><br>
+              <label> <input type="radio" value="7" name="stocks" class="yo">Stock 7 </label><br>
+              <label> <input type="radio" value="8" name="stocks" class="yo">Stock 8 </label><br>
+              <label> <input type="radio" value="9" name="stocks" class="yo">Stock 9 </label><br>
+              <label> <input type="radio" value="10" name="stocks" class="yo">Stock10 </label><br>
+              <button type="submit" id="confirm" class="btn btn-block btn-outline-dark btn-lg"> Confirm</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 ss">
+        <!-- <div class="alert warning">
+          <strong> Warning!</strong> The invested amount should be less than the capital earned in the previous rounds.
+        </div> -->
+        <div class="alert warning">
+          <strong>Capital Amount - </strong><%= capitalAmount%>
+          <strong>Returns - </strong><%= earnings%>
+        </div>
+        <br>
+
+        <div class="card">
+          <div class="card-header bg-dark text">
+            <h3>Trade</h3>
+          </div>
+          <div class="card-body">
+
+            <div class="cool">
+              <form class="" action="buy" method="post">
+                <label for="Investment" class="sr-only">Limit</label>
+
+                <input type="Investment" id="invest" name="investmentAmount" class="form-control " placeholder="Invest">
+                <button class="btn btn-dark k" id="investmentButton" onclick="investAlert()">INVEST</button>
+              </form>
+              <form class="" action="sell" method="post">
+                 <button type="submit" id="sellButton" class="btn btn-dark k" onclick="sellAlert()">SELL</button>
+              </form>
+            </div>
+            <br>
+
+
+
+
+          </div>
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+  <footer id="footer">
+
+    <i class="fa fa-facebook mm" aria-hidden="true"></i>
+    <i class="fa fa-instagram mm" aria-hidden="true"></i>
+    <i class="fa fa-envelope mm" aria-hidden="true"></i>
+    <i class="fa fa-linkedin mm" aria-hidden="true"></i>
+
+    <p class="m">© Copyright 2020 TEC</p>
+
+  </footer>
+
+
+
+  <script>
+    var startTime,endTime,timeelapsed;
+    function investAlert(){
+      if(Number(document.getElementById("invest").value)>10000){
+        alert("Cannot invest due to capital deficit");
+      }else{
+        startTime = new Date().getTime();
+        alert("Are you sure to go ahead with the investment? ");
+
+      }
+
+       // alert(Number(document.getElementById("invest").value)+2);
+
+    }
+
+    function sellAlert(){
+      endTime = new Date().getTime();
+
+      timeelapsed = endTime-startTime;
+      timeelapsed /= 1000;
+
+      if(timeelapsed<10){
+        alert("Cannot sell within 10 seconds of investment");
+      }
+      // alert("Are you sure you want to sell?");
+    }
+  </script>
+
+</body>
+
+</html>
